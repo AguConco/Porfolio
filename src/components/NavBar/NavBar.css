@@ -1,0 +1,89 @@
+header {
+    width: 100%;
+    box-shadow: 0 5px 10px #00000020;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 10000;
+}
+
+header>div {
+    max-width: 1024px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 115px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+    position: relative;
+}
+
+nav ul li:nth-last-child(3) a {
+    border: 1px solid #d4d4d4;
+    padding: 5px 15px;
+    border-radius: 30px;
+    color: #1872fa;
+}
+
+nav ul li:nth-last-child(3) a:hover {
+    border: 1px solid #1872fa;
+    box-shadow: 0 0 0 3px#1872fa30;
+}
+
+nav ul li:nth-last-child(1) {
+    margin-left: 10px;
+}
+
+nav ul li div {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #1872fa;
+    transition: .2s;
+}
+
+nav ul li:hover div {
+    width: 100%;
+}
+
+
+nav ul li a {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+header button {
+    font-size: 15px;
+    padding: 7px;
+    color: #1872fa;
+    background: #fff;
+    border: 1px solid #1872fa;
+    font-weight: 300;
+    border-radius: 50px;
+    width: 100px;
+    margin-left: 15px;
+    transition: .3s;
+    cursor: pointer ;
+}
+
+header button:hover {
+    color: #1872fa;
+    box-shadow: 0 0 0 3px #1872fa30;
+}
