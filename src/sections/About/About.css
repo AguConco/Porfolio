@@ -1,0 +1,93 @@
+.sectionAbout {
+    height: 800px;
+    position: relative;
+    padding-top: 120px;
+    background: #f9f9f9;
+}
+
+.sectionAbout>div {
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerImg {
+    height: 370px;
+    width: 49%;
+    position: relative;
+}
+
+.containerImg img {
+    height: 100%;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 20px;
+    position: relative;
+}
+
+.containerImg div {
+    position: absolute;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    background: #fff;
+    box-shadow: 0 25px 30px -15px #00000030;
+    right: calc(10% - 20px);
+    bottom: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerImg div svg {
+    height: 30px;
+    width: 30px;
+}
+
+.containerImg div svg path {
+    fill: #1872fa;
+}
+
+.info {
+    width: 49%;
+}
+
+.info span {
+    color: #1872fa;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.info h2 {
+    font-size: 26px;
+    margin: 10px 0 15px;
+    line-height: 30px;
+    letter-spacing: .5px;
+}
+
+.info p {
+    color: #7d7d7d;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.info h5 {
+    font-size: 16px;
+    margin: 10px 0 40px;
+    font-weight: 400;
+}
+
+.info a{
+    border: 1px solid #d4d4d4;
+    padding: 7px 15px;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.info a:hover {
+    color: #1872fa;
+    border: 1px solid #1872fa;
+    box-shadow: 0 0 0 3px#1872fa30;
+}

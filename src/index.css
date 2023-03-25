@@ -14,6 +14,10 @@
   background: #00000020;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -24,5 +28,9 @@ ul {
 }
 
 body {
-  background: #eee;
+  background: #fff;
+}
+
+section {
+  scroll-margin: 80px;
 }

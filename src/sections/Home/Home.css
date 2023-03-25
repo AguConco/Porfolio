@@ -1,0 +1,73 @@
+.sectionHome {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: #fff;
+}
+
+.sectionHome>div {
+    max-width: 1024px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 42px;
+}
+
+.title>span {
+    font-size: 28px;
+    color: #7d7d7d;
+    display: block;
+}
+
+.btnAbout {
+    padding: 7px 15px;
+    background: #fff;
+    color: #1872fa;
+    border: 1px solid #1872fa;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.btnAbout:hover {
+    color: #fff;
+    background: #1872fa;
+    box-shadow: 0 5px 10px #00000020;
+}
+
+.sectionSkills ul {
+    padding-right: 50px;
+}
+
+.sectionSkills ul li {
+    border-right: 1px solid #eee;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: #fff;
+    padding: 10px 15px;
+    width: 140px;
+}
+
+.sectionSkills ul li svg {
+    height: 35px;
+    width: 35px;
+}
+
+.sectionSkills ul li span {
+    font-size: 16px;
+    margin-right: 20px;
+    transition: .2s;
+    color: #ccc;
+}
+
+.sectionSkills ul li:hover span {
+    transform: translateX(5px);
+    color: #575758;
+}

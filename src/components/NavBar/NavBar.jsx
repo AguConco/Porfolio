@@ -5,15 +5,15 @@ const NavBar = () => {
     return (
         <header>
             <div>
-                <h4><a href="#">AgustínConcollato.dev</a></h4>
+                <h4><a href="#home">Agustín.dev</a></h4>
                 <nav>
                     <ul>
                         <li>
-                            <a href="#"> Inicio </a>
+                            <a href="#home"> Inicio </a>
                             <div></div>
                         </li>
                         <li>
-                            <a href="#"> Sobre mi </a>
+                            <a href="#about"> Sobre mí </a>
                             <div></div>
                         </li>
                         <li>
