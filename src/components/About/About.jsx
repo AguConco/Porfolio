@@ -13,7 +13,7 @@ const About = () => {
                     <div><FontAwesomeIcon icon={faCode} /></div>
                 </div>
                 <div className="info">
-                    <span>ACERCA DE MÍ</span>
+                    <h3>ACERCA DE MÍ</h3>
                     <h2>Un apacionado en diseñar, maquetar y programar sitios web </h2>
                     <p>
                         Como desarrollador front-end junior, cuento con conocimientos en HTML, CSS, JavaScript y React JS.

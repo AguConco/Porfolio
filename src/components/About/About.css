@@ -1,5 +1,4 @@
 .sectionAbout {
-    height: 800px;
     position: relative;
     padding-top: 120px;
     background: #f9f9f9;
@@ -53,9 +52,8 @@
     width: 49%;
 }
 
-.info span {
+.info h3 {
     color: #1872fa;
-    font-weight: 600;
     font-size: 18px;
 }
 

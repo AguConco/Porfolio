@@ -59,14 +59,14 @@ nav ul li div {
     transition: .2s;
 }
 
-nav ul li:hover div {
-    width: 100%;
-}
-
-
 nav ul li a {
     font-size: 16px;
     font-weight: 300;
+}
+
+nav ul li a:hover {
+    color: #1872fa;
+    fill: #1872fa;
 }
 
 header button {

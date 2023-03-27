@@ -1,0 +1,48 @@
+.sectionContact {
+    padding: 120px 0;
+    background: #fff;
+}
+
+.sectionContact>div {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.sectionContact h3 {
+    color: #1872fa;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sectionContact>div>span {
+    color: #7d7d7d;
+    font-size: 18px;
+}
+
+.containerContactCard {
+    display: flex;
+    margin-top: 40px;
+}
+
+.contactCard {
+    margin-right: 30px;
+    padding-left: 20px;
+    border-left: 5px solid #1872fa;
+}
+
+.contactCard span {
+    display: block;
+    color: #7d7d7d;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contactCard a {
+    font-size: 16px;
+    -webkit-text-stroke: .5px #fff;
+}
+
+.contactCard a:hover{
+    color: #1872fa;
+}

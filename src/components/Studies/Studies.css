@@ -1,0 +1,87 @@
+.sectionStudies {
+    background: #f9f9f9;
+    padding: 120px 0;
+}
+
+.sectionStudies>div {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.sectionStudies h3 {
+    color: #1872fa;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.containerStudies {
+    display: flex;
+}
+
+.study {
+    width: 400px;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.study:hover {
+    box-shadow: 0 15px 30px #00000010;
+}
+
+.study>div {
+    display: flex;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+
+.study>div h4 {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 20px;
+    min-width: calc(100% - 100px);
+}
+
+.study>div h4 span {
+    display: block;
+    color: #ccc;
+    font-size: 16px;
+}
+
+.studyContainerImg {
+    min-width: 80px;
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.studyContainerImg img {
+    border-radius: 50%;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #eee;
+}
+
+.study ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 7px 0;
+    padding: 5px 10px;
+}
+
+.study ul li a {
+    position: relative;
+    top: 4px;
+}
+
+.study ul li a:hover .svgChange { 
+    fill: #1872fa;
+}
+
+.study ul li a:hover path, .study ul li a:hover circle {
+    stroke: #1872fa;
+}
