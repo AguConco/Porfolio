@@ -4,6 +4,7 @@ import About from './components/About/About'
 import Home from './components/Home/Home'
 import Studies from './components/Studies/Studies'
 import Contact from './components/Contact/Contact'
+import Projects from './components/Projects/Projects'
 
 const App = () => {
   return (
@@ -12,9 +13,8 @@ const App = () => {
       <Home />
       <About />
       <Studies />
-      {/* <Projects />  En esta seccion aclarar que son proyectos de prueba para que uno vea el diseño y estilo de trabajo que realizo*/}
-      <Contact /> 
-      {/*  Dejar correo y Wpp pero no hacer formulario de contacto*/}
+      <Projects />
+      <Contact />
     </div>
   )
 }

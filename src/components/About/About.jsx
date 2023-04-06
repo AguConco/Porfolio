@@ -3,6 +3,7 @@ import './About.css'
 import computer from '../../assets/img/background.jpg'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCode } from "@fortawesome/free-solid-svg-icons"
+import cv from '../../assets/cv/cv-agustin-concollato.pdf'
 
 const About = () => {
     return (
@@ -23,7 +24,7 @@ const About = () => {
                         Además tengo conocimientos en React Native para el desarrollo de aplicaciones móviles multiplataforma.
                     </p>
                     <h5>Me encuentro en Rafaela, Santa Fe, Argentina 📍</h5>
-                    <a href="#" target="_blank" rel="noopener noreferrer">Ver CV</a>
+                    <a href={cv} target="_blank" rel="noopener noreferrer">Ver CV</a>
                 </div>
             </div>
         </section>

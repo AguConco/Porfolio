@@ -28,8 +28,6 @@ const Home = () => {
                 <div className="containerTitle">
                     <h1 className="title">Hola! 👋🏼 <br /> Soy Agustin Concollato <span> Desarrollador Front-End </span></h1>
                     <a href="#about" className="btnAbout">Sobre mi</a>
-                    {/* <a href="#about" className="btnAbout">LinkedIn</a> */}
-                    {/* <a href="#about" className="btnAbout">GitHub</a> */}
                 </div>
             </div>
         </section>
