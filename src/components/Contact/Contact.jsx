@@ -14,7 +14,7 @@ const Contact = () => {
                     </div>
                     <div className="contactCard">
                         <span>Celular / WhatsApp</span>
-                        <a target="_blank" rel="noopener noreferrer" href="https://web.whatsapp.com/send?text=Hola!&amp;phone=+543492417924">+54 3492 417924</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://web.whatsapp.com/send?&amp;phone=+543492417924">+54 3492 417924</a>
                     </div>
                 </div>
             </div>

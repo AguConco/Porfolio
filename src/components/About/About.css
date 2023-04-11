@@ -69,12 +69,7 @@
     font-weight: 300;
     font-size: 15px;
     line-height: 22px;
-}
-
-.info h5 {
-    font-size: 16px;
-    margin: 10px 0 40px;
-    font-weight: 400;
+    margin-bottom: 40px;
 }
 
 .info a{
@@ -86,6 +81,6 @@
 
 .info a:hover {
     color: #1872fa;
-    border: 1px solid #1872fa;
+    border-color:#1872fa;
     box-shadow: 0 0 0 3px#1872fa30;
 }
