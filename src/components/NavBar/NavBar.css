@@ -18,9 +18,8 @@ header>div {
 }
 
 header h4 {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 300;
-    max-width: 115px;
     position: relative;
 }
 
@@ -34,21 +33,27 @@ nav ul li {
     position: relative;
 }
 
-nav ul li:nth-last-child(3) a {
+nav ul li:nth-last-child(2) a {
     border: 1px solid #d4d4d4;
     padding: 5px 15px;
     border-radius: 30px;
     color: #1872fa;
 }
 
-nav ul li:nth-last-child(3) a:hover {
+nav ul li:nth-last-child(2) a:hover {
     border: 1px solid #1872fa;
     box-shadow: 0 0 0 3px#1872fa30;
 }
 
 nav ul li:nth-last-child(1) {
     margin-left: 10px;
+    margin-top: 5px;
 }
+
+nav ul li a {
+    fill: #575758;
+}
+
 
 nav ul li div {
     position: absolute;

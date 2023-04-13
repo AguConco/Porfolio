@@ -21,6 +21,11 @@
     display: flex;
     justify-content: space-between;
     box-shadow: 0 10px 20px #00000010;
+    margin: 20px 0 60px;
+}
+
+.project:nth-last-child(1) {
+    margin-bottom: 0;
 }
 
 .projectInfo {
