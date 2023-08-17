@@ -3,10 +3,15 @@
   src: url(./assets/fonts/Viga-Regular.ttf);
 }
 
+@font-face {
+  font-family: 'Poppins';
+  src: url(./assets/fonts/Poppins-Medium.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: 'viga';
+  font-family: 'Poppins'; /* ver si usar 'viga'*/
   color: #575758;
 }
 
@@ -33,4 +38,9 @@ body {
 
 section {
   scroll-margin: 80px;
+}
+
+.title-section {
+  color: #1872fa;
+  font-size: 18px;
 }

@@ -5,8 +5,8 @@ const Contact = () => {
     return (
         <section id="contact" className="sectionContact">
             <div>
-                <h3>CONTACTO</h3>
-                <span>Cualquier consulta sobre el sitio web que deseas realizar, no dudes en contactarme.</span>
+                <h3 className="title-section">CONTACTO</h3>
+                <span>Cualquier consulta sobre la aplicación que deseas realizar, no dudes en contactarme.</span>
                 <div className="containerContactCard">
                     <div className="contactCard">
                         <span>Correo electrónico</span>

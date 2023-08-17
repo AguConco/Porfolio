@@ -17,7 +17,7 @@ const Studies = () => {
     return (
         <section className="sectionStudies">
             <div>
-                <h3>ESTUDIOS</h3>
+                <h3 className="title-section">ESTUDIOS</h3>
                 <div className="containerStudies">
                     <div className="study">
                         <div>

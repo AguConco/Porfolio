@@ -17,45 +17,41 @@ header>div {
     align-items: center;
 }
 
-header h4 {
-    font-size: 18px;
-    font-weight: 300;
-    position: relative;
+.logo {
+    transform: scale(1.5);
+    flex-grow: 0;   
+    flex-basis: 110px;
 }
 
-nav ul {
+.nav-sections ul {
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
-nav ul li {
-    margin-left: 20px;
-    position: relative;
+.nav-section-contact {
+    flex-grow: 0;   
+    flex-basis: 110px;
 }
 
-nav ul li:nth-last-child(2) a {
+.btn-contact {
     border: 1px solid #d4d4d4;
     padding: 5px 15px;
     border-radius: 30px;
     color: #1872fa;
+    margin-left: 5px;
 }
 
-nav ul li:nth-last-child(2) a:hover {
+.btn-contact:hover {
     border: 1px solid #1872fa;
     box-shadow: 0 0 0 3px#1872fa30;
 }
 
-nav ul li:nth-last-child(1) {
-    margin-left: 10px;
-    margin-top: 5px;
-}
-
-nav ul li a {
+.nav-sections ul li a {
     fill: #575758;
 }
 
-
-nav ul li div {
+.nav-sections ul li div {
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -65,31 +61,12 @@ nav ul li div {
     transition: .2s;
 }
 
-nav ul li a {
+.nav-sections ul li a {
     font-size: 16px;
     font-weight: 300;
 }
 
-nav ul li a:hover {
+.nav-sections ul li a:hover {
     color: #1872fa;
     fill: #1872fa;
-}
-
-header button {
-    font-size: 15px;
-    padding: 7px;
-    color: #1872fa;
-    background: #fff;
-    border: 1px solid #1872fa;
-    font-weight: 300;
-    border-radius: 50px;
-    width: 100px;
-    margin-left: 15px;
-    transition: .3s;
-    cursor: pointer ;
-}
-
-header button:hover {
-    color: #1872fa;
-    box-shadow: 0 0 0 3px #1872fa30;
 }

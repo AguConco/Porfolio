@@ -8,9 +8,7 @@
     margin: auto;
 }
 
-.sectionContact h3 {
-    color: #1872fa;
-    font-size: 18px;
+.sectionContact .title-section {
     margin-bottom: 10px;
 }
 
@@ -39,8 +37,8 @@
 }
 
 .contactCard a {
-    font-size: 16px;
-    -webkit-text-stroke: .5px #fff;
+    font-size: 14px;
+    font-family: 'Poppins';
 }
 
 .contactCard a:hover{

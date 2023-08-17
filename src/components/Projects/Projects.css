@@ -9,27 +9,46 @@
     margin: auto;
 }
 
-.sectionProjects h3 {
-    color: #1872fa;
-    font-size: 18px;
+.header-project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 10px;
 }
 
-.project {
-    padding: 20px;
-    border-radius: 10px;
+.header-project div {
+    color: #aaa;
+}
+
+.header-project button {
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #aaa;
+    margin: 0 5px;
+}
+
+.header-project button:hover {
+    color: #575758;
+}
+
+.header-project .project-selected{
+    color: #575758;
+}
+
+.container-projects {
     display: flex;
     justify-content: space-between;
-    box-shadow: 0 10px 20px #00000010;
-    margin: 20px 0 60px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.project:nth-last-child(1) {
-    margin-bottom: 0;
-}
-
-.projectInfo {
-    margin-right: 20px;
+.project {
+    margin: 20px 0;
+    border-radius: 10px;
+    width: 490px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -47,22 +66,8 @@
     display: flex;
     align-items: center;
     font-family: 'Poppins';
-    margin-bottom: 15px;
     font-size: 20px;
-}
-
-.project p {
-    color: #7d7d7d;
-    -webkit-text-stroke: .3px #fff;
-    font-size: 18px;
-    display: inline-block;
-    width: 300px;
-}
-
-.project p span {
-    margin-top: 10px;
-    display: block;
-    font-size: 16px;
+    font-weight: 300;
 }
 
 .project a {
@@ -71,8 +76,13 @@
     border-radius: 30px;
     border: 1px solid #eee;
     padding: 7px 15px;
-    margin: 10px 10px 0 0;
+    margin-right: 10px;
     font-size: 16px;
+}
+
+.project a:last-child {
+    position: relative;
+    top: -3px;
 }
 
 .project a svg {
@@ -85,28 +95,28 @@
     box-shadow: 0 0 0 3px#1872fa30;
 }
 
-.project a:hover svg path{
+.project a:hover svg path {
     fill: #1872fa;
 }
 
-.containerImgProject {
-    height: 320px;
-    width: 640px;
+.container-img-project {
     display: flex;
     justify-content: center;
     overflow: hidden;
     border-radius: 10px;
     border: 1px solid #eee;
     position: relative;
+    margin:  20px 0;
+    max-height: 230px;
 }
 
-.containerImgProject img {
-    /* width: 100%; */
+.container-img-project img {
+    width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.containerImgProject>div {
+.container-img-project>div {
     opacity: 0;
     position: absolute;
     bottom: 0;
@@ -120,7 +130,7 @@
     border-top: 1px solid #eee;
 }
 
-.containerImgProject:hover>div {
+.container-img-project:hover>div {
     opacity: 1;
 }
 

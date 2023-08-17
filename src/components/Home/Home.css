@@ -13,108 +13,81 @@
     justify-content: space-between;
 }
 
+.sectionHome>div>div {
+    max-width: 600px;
+}
+
 .title {
-    font-size: 44px;
+    font-size: 40px;
     font-weight: 300;
-    line-height: 44px;
+    line-height: 40px;
 }
 
 .title>span {
-    font-size: 28px;
-    color: #7d7d7d;
+    font-size: 26px;
+    color: #aaa;
     display: block;
 }
 
 .location {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     margin-top: 10px;
+    color: #7d7d7d;
 }
 
-.containerImgHome {
+.location a {
+    color: #7d7d7d;
+}
+
+.location a:hover {
+    text-decoration: underline;
+}
+
+.container-img-home {
     border-radius: 50%;
     overflow: hidden;
+    max-height: 300px;
+    max-width: 300px;
     height: 300px;
     width: 300px;
     box-shadow: 0 20px 20px -10px #00000020;
 }
 
-.containerImgHome img {
+.container-img-home img {
     object-fit: cover;
     width: 100%;
     transform: scale(1.31);
 }
 
-.btnAbout {
-    padding: 7px 15px;
-    background: #fff;
-    color: #1872fa;
-    border: 1px solid #1872fa;
-    border-radius: 30px;
-    display: inline-block;
-    margin-top: 20px;
-    font-size: 18px;
-}
-
-.btnAbout:hover {
-    color: #fff;
-    background: #1872fa;
-    box-shadow: 0 5px 10px #00000020;
-}
-
-.sectionSkills {
+.container-brief-description {
     margin: 30px 0;
 }
 
-.sectionSkills>span {
-    -webkit-text-stroke: .5px #fff;
-    font-size: 18px;
-    margin-bottom: 10px;
-    display: block;
-    color: #7d7d7d;
+.brief-description {
+    font-size: 25px;
+    line-height: 30px;
 }
 
-.sectionSkills ul {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+.btn-service ,.btn-projects {
+    padding: 7px 15px;
+    border: 1px solid #1872fa;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 20px 10px 0 0;
+    font-size: 16px;
 }
 
-.sectionSkills ul li {
-    border-radius: 50%;
-    margin-right: 10px;
-    background: #fff;
-    padding: 10px 15px;
-    border: 1px solid #eee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 45px;
-    width: 40px;
-    position: relative;
-}
-
-.sectionSkills ul li svg {
-    height: 35px;
-    width: 35px;
-}
-
-.sectionSkills ul li span {
-    font-size: 15px;
-    font-weight: 300;
-    transition: .2s;
+.btn-service {
+    background: #1872fa;
     color: #fff;
-    background: #00000099;
-    border-radius: 5px;
-    position: absolute;
-    bottom: -20px;
-    padding: 3px 7px;
-    opacity: 0;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
-.sectionSkills ul li:hover span {
-    opacity: 1;
-    bottom: -35px;
+.btn-projects {
+    background: #fff;
+    color: #1872fa;
+}
+
+.btn-service:hover ,.btn-projects:hover {
+    box-shadow: 0 0 0 3px#1872fa30;
 }
