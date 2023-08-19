@@ -12,7 +12,7 @@
 
 .card-service {
     width: 290px;
-    height: 300px;
+    height: 350px;
     padding: 20px;
     border: 1px solid #f5f5f5;
     border-radius: 10px;
@@ -22,6 +22,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .card-service:hover {
@@ -29,10 +30,13 @@
     box-shadow: 0 15px 30px #00000010;
 }
 
+.card-service:hover .soon {
+    opacity: 1;
+}
+
 .title-service {
     font-size: 20px;
-    line-height: 24px;
-    text-align: center;
+    line-height: 28px;
     display: block;
     min-height: 70px;
 }
@@ -54,9 +58,8 @@
 }
 
 .description-service {
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 5px;
-    padding: 0 10px;
     color: #7d7d7d;
 }
 
@@ -77,4 +80,19 @@
     background: #1872fa;
     color: #fff;
     box-shadow: 0 0 0 3px#1872fa30;
+}
+
+.soon {
+    /* opacity: 0; */
+    position: absolute;
+    background: #ffffffaa;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    backdrop-filter: blur(1px);
 }

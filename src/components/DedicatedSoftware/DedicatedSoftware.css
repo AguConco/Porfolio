@@ -1,0 +1,98 @@
+.dedicated-software-section {
+    max-width: 1024px;
+    margin: auto;
+    padding: 120px 0;
+}
+
+.back,
+.back svg path {
+    cursor: pointer;
+    color: #aaa;
+}
+
+.back svg {
+    margin-right: 5px;
+}
+
+.back:hover,
+.back:hover svg path {
+    color: #1872fa;
+    fill: #1872fa;
+}
+
+.dedicated-software-title {
+    font-weight: 300;
+    margin: 10px 0 5px;
+    font-size: 26px;
+}
+
+.dedicated-software-subtitle {
+    margin-bottom: 20px;
+    font-size: 18px;
+    display: block;
+}
+
+.dedicated-software-section h3 {
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.dedicated-software-section p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.start-project {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.start-project div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 40px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+}
+
+.start-project div svg {
+    position: relative;
+    transition: .3s;
+}
+
+.start-project div svg path {
+    fill: #1872fa;
+}
+
+.start-project span {
+    color: #1872fa;
+    font-size: 18px;
+}
+
+.start-project:hover div svg {
+    animation: startProject 1s infinite;
+}
+/* 
+.start-project:hover div {
+    box-shadow: 0 0 0 3px #1872fa30;
+    border-color: #1872fa;
+} */
+
+@keyframes startProject {
+    0% {
+        top: 0
+    }
+
+    50% {
+        top: 3px;
+    }
+
+    100% {
+        top: 0;
+    }
+}

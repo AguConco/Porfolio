@@ -20,13 +20,16 @@ header>div {
 .logo {
     transform: scale(1.5);
     flex-grow: 0;   
-    flex-basis: 110px;
 }
 
 .nav-sections ul {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
+}
+
+.nav-sections ul li a {
+    padding: 5px 10px;
 }
 
 .nav-section-contact {
@@ -35,7 +38,7 @@ header>div {
 }
 
 .btn-contact {
-    border: 1px solid #d4d4d4;
+    border: 1px solid #ddd;
     padding: 5px 15px;
     border-radius: 30px;
     color: #1872fa;

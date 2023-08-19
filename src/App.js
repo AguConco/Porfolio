@@ -8,6 +8,7 @@ import Projects from './components/Projects/Projects'
 import Footer from './components/Footer/Footer'
 import { Route, Routes } from 'react-router-dom';
 import { Service } from './components/Service/Service'
+import { DedicatedSoftware } from './components/DedicatedSoftware/DedicatedSoftware'
 
 
 const PageInit = () => (
@@ -18,7 +19,6 @@ const PageInit = () => (
     <Studies />
     <Projects />
     <Contact />
-    <Footer />
   </>
 )
 
@@ -28,7 +28,9 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route path='/' element={<PageInit />} />
+        <Route path='/dedicated-software' element={<DedicatedSoftware />} />
       </Routes>
+      <Footer />
     </div>
   )
 }

@@ -27,7 +27,7 @@ const NavBar = () => {
                     </ul>
                 </nav>
                 <nav className="nav-section-contact">
-                    <a className="btn-contact" href="/#contact"> Contacto </a>
+                    <a className="btn-contact" href="#contact"> Contacto </a>
                 </nav>
             </div>
         </header>

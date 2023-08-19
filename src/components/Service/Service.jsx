@@ -9,9 +9,7 @@ export const Service = () => {
                 <div className="card-service">
                     <h5 className="title-service">Desarrollo de software a medida</h5>
                     <div className="container-description">
-                        <p className='description-service'>Me explicas cuales son tus necesidades o que problema queres solucionar.</p>
-                        <p className='description-service'>Te muestro cómo lo podríamos hacer y cual sería la mejor manera.</p>
-                        <p className='description-service'>Al llegar a un acuerdo se empezaría el trabajo.</p>
+                        <p className='description-service'>Si estás buscando una solución única y adaptada, estoy aquí para guiar el camino desde la idea hasta la implementación.</p>
                         <div></div>
                     </div>
                     <Link to="/dedicated-software" className='action-card-service'>Pedir presupuesto</Link>
@@ -25,6 +23,7 @@ export const Service = () => {
                         <div></div>
                     </div>
                     <Link to="/programs" className='action-card-service'>Ver todos los programas</Link>
+                    <div className="soon"><span>Próximamente</span></div>
                 </div>
             </div>
         </section>

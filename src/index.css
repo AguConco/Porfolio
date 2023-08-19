@@ -43,4 +43,5 @@ section {
 .title-section {
   color: #1872fa;
   font-size: 18px;
+  text-transform: uppercase;
 }
