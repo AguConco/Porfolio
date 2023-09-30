@@ -10,8 +10,6 @@ import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
 
 const Projects = () => {
 
-    const [projectView, setProjectView] = useState(true)
-
     const projects = [
         {
             name: 'TechShop',
@@ -40,10 +38,12 @@ const Projects = () => {
         <section id="projects" className="sectionProjects" >
             <div className="header-project">
                 <h3 className="title-section" >PROYECTOS</h3>
+                <p>
+                    Estos proyectos fueron realizados en los cursos que hice.
+                    Aunque no necesariamente tienen un propósito funcional para otros,
+                    demuestran mi capacidad para aplicar lo que he aprendido en situaciones prácticas.
+                </p>
             </div>
-            <p>
-                Breve descripcion de que nos proyectos...
-            </p>
             <div className="container-projects">
                 {projects.map(e => (
                     <div className="project">

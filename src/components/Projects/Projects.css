@@ -9,11 +9,13 @@
     margin: auto;
 }
 
-.header-project {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header-project h3 {
     margin-bottom: 10px;
+}
+
+.header-project p {
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 .header-project div {
@@ -34,7 +36,7 @@
     color: #575758;
 }
 
-.header-project .project-selected{
+.header-project .project-selected {
     color: #575758;
 }
 
@@ -106,7 +108,7 @@
     border-radius: 10px;
     border: 1px solid #eee;
     position: relative;
-    margin:  20px 0;
+    margin: 20px 0;
     max-height: 230px;
 }
 
