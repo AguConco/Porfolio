@@ -3,6 +3,10 @@ footer {
     background: #2b2b2b;
 }
 
+footer .logo {
+    color: #d7d7d7;
+}
+
 footer>div {
     max-width: 1024px;
     margin: auto;
@@ -29,14 +33,4 @@ footer ul li svg path {
 
 footer ul li:hover svg path {
     fill: #fff;
-}
-
-footer p {
-    text-align: center;
-    color: #d7d7d7;
-}
-
-footer p span {
-    color: #d7d7d7;
-    -webkit-text-stroke: .7px #2b2b2b;
 }

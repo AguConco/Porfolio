@@ -5,6 +5,7 @@ import { ServiceList } from './ServiceList'
 import NavBar from '../NavBar/NavBar'
 import Contact from '../Contact/Contact'
 import { useEffect } from 'react'
+import Ecommerce from '../Ecommerce/Ecommerce'
 
 export const Service = () => {
 
@@ -17,6 +18,7 @@ export const Service = () => {
             <NavBar status={false} />
             <Routes>
                 <Route path='/dedicated-software' element={<DedicatedSoftware />} />
+                <Route path='/e-commerce' element={<Ecommerce />} />
                 <Route path='/' element={<ServiceList />} />
             </Routes>
             <Contact />
