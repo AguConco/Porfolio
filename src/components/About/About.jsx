@@ -15,9 +15,9 @@ const About = () => {
                 </div>
                 <div className="info">
                     <h3 className="title-section">SOBRE MÍ</h3>
-                    <h2>Me encanta diseñar y programar aplicaciones web </h2>
+                    <h2>Me gusta diseñar y programar aplicaciones web </h2>
                     <p>
-                        Como desarrollador front-end, cuento con conocimientos en HTML, CSS, JavaScript y React JS.
+                        Como desarrollador web, cuento con conocimientos en HTML, CSS, JavaScript y React JS del lado del cliente. Y del lado del servidor PHP y node js.
                     </p>
                     <p>
                         Me destaco en el diseño de sitios web con interfaces dinámicas, atractivas, minimalistas y receptivas

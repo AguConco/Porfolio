@@ -1,6 +1,7 @@
 import React from "react"
 import './Home.css'
 import imgCv from '../../assets/img/img-cv.jpg'
+import { Link } from "react-router-dom"
 
 const Home = () => {
     return (
@@ -18,7 +19,7 @@ const Home = () => {
                         <h5 className="location">Me encuentro en <a href="https://goo.gl/maps/9PQqumgYHv6yRdpK6" target="_blank" rel="noopener noreferrer">Rafaela, Santa Fe, Argentina</a></h5>
                     </div>
                     <a href="#projects" className="btn-projects">Ver proyectos</a>
-                    <a href="#service" className="btn-service">Ver servicios</a>
+                    <Link to="/service" className="btn-service">Ver servicios</Link>
                 </div>
                 <div className="container-img-home" >
                     <img src={imgCv} alt="foto Agustin Concollato" />

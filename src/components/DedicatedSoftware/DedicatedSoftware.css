@@ -33,21 +33,21 @@
 }
 
 .dedicated-software-section h3 {
-    font-weight: 300;
     margin-bottom: 10px;
     font-size: 18px;
 }
 
 .dedicated-software-section p {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .start-project {
     margin-top: 60px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 20px;
+    
 }
 
 .start-project div {

@@ -1,33 +1,40 @@
-import React from "react"
 import './NavBar.css'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCode } from "@fortawesome/free-solid-svg-icons"
+import { Link } from 'react-router-dom'
 
-const NavBar = () => {
+const NavBar = ({ status }) => {
     return (
         <header>
             <div>
-                <div className="logo">
-                    <FontAwesomeIcon icon={faCode} />
-                </div>
+                <Link to='/' className="logo">
+                    CONCO
+                </Link>
                 <nav className="nav-sections">
                     <ul>
+                        {status ?
+                            <>
+                                <li>
+                                    <a href="/#home"> Inicio </a>
+                                </li>
+
+                                <li>
+                                    <a href="/#about"> Sobre mí </a>
+                                </li>
+                                <li>
+                                    <a href="/#projects"> Proyectos </a>
+                                </li>
+                            </> :
+                            <li>
+                                <Link to={"/"} >Inicio</Link>
+
+                            </li>
+                        }
                         <li>
-                            <a href="/#home"> Inicio </a>
+                            <a className="btn-contact" href="#contact"> Contacto </a>
                         </li>
                         <li>
-                            <a href="/#service">Servicios</a>
-                        </li>
-                        <li>
-                            <a href="/#about"> Sobre mí </a>
-                        </li>
-                        <li>
-                            <a href="/#projects"> Proyectos </a>
+                            <Link to="/service" className='btn-service'>Servicios</Link>
                         </li>
                     </ul>
-                </nav>
-                <nav className="nav-section-contact">
-                    <a className="btn-contact" href="#contact"> Contacto </a>
                 </nav>
             </div>
         </header>

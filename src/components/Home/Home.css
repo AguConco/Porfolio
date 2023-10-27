@@ -74,13 +74,16 @@
     border: 1px solid #1872fa;
     border-radius: 30px;
     display: inline-block;
-    margin: 20px 10px 0 0;
     font-size: 16px;
 }
 
 .btn-service {
     background: #1872fa;
     color: #fff;
+}
+
+.sectionHome .btn-projects {
+    margin: 20px 10px 0 0;
 }
 
 .btn-projects {

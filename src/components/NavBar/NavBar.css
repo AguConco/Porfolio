@@ -17,9 +17,8 @@ header>div {
     align-items: center;
 }
 
-.logo {
-    transform: scale(1.5);
-    flex-grow: 0;   
+.logo::first-letter {
+    color: #1872fa;
 }
 
 .nav-sections ul {
@@ -32,9 +31,8 @@ header>div {
     padding: 5px 10px;
 }
 
-.nav-section-contact {
-    flex-grow: 0;   
-    flex-basis: 110px;
+.nav-sections ul li  .btn-service:hover {
+    color: #FFFFFF;
 }
 
 .btn-contact {
