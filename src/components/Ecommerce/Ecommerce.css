@@ -1,0 +1,111 @@
+.section-service-ecommerce {
+    max-width: 1024px;
+    margin: 120px auto;
+}
+
+.ecommerce-title {
+    font-weight: 300;
+    margin: 10px 0 30px;
+    font-size: 26px;
+}
+
+.container-plans {
+    display: flex;
+    gap: 15px;
+}
+
+.purchase-plan {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 100%;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.plan-selected {
+    border-color: #1872fa;
+    box-shadow: 0 0 0 3px #1872fa30;
+    transform: scale(1.015);
+}
+
+.purchase-plan:hover{
+    border-color: #1872fa;
+}
+
+.purchase-plan:active{
+    border-color: #1872fa;
+    box-shadow: 0 0 0 3px #1872fa30;
+    transform: scale(.99);
+}
+
+.purchase-plan h5 {
+    font-size: 22px;
+    font-weight: 300;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.purchase-plan h5 span {
+    font-size: 18px;
+    color: #1872fa;
+}
+
+.container-contact-plan {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-plan {
+    margin-top: 60px;
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.contact-plan div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 50px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+}
+
+.contact-plan div svg {
+    position: relative;
+    transition: .3s;
+}
+
+.contact-plan div svg path {
+    fill: #1872fa;
+}
+
+.contact-plan span {
+    color: #1872fa;
+    font-size: 18px;
+}
+
+.contact-plan:hover div svg {
+    animation: contactPlan 1s infinite;
+}
+
+@keyframes contactPlan {
+    0% {
+        left: 0
+    }
+
+    50% {
+        left: 3px;
+    }
+
+    100% {
+        left: 0;
+    }
+}

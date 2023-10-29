@@ -1,5 +1,3 @@
-import React from "react"
-
 export const certificate = <svg width="25" viewBox="0 0 347 317" fill="none">
     <rect className="svgChange" x="115" y="63" width="117" height="9" rx="4.5" fill="#7d7d7d" />
     <rect className="svgChange" x="73" y="159" width="111" height="9" rx="4.5" fill="#7d7d7d" />
@@ -36,3 +34,29 @@ export const certificate = <svg width="25" viewBox="0 0 347 317" fill="none">
     <path d="M235.5 229V311.052C235.5 311.947 236.587 312.391 237.214 311.752L259.813 288.701C260.194 288.312 260.817 288.3 261.214 288.674L285.813 311.907C286.451 312.509 287.5 312.057 287.5 311.18V229" stroke="#7d7d7d" stroke-width="9" stroke-linejoin="round" />
     <path className="svgChange" d="M10 265V10H337V265H283V275H340C343.866 275 347 271.866 347 268V7C347 3.13401 343.866 0 340 0H7C3.13401 0 0 3.134 0 6.99999V268C0 271.866 3.134 275 6.99999 275H240V265H10Z" fill="#AAAAAA" />
 </svg>
+
+export const services = [
+    {
+        title: "Desarrollo de software a medida",
+        subtitle: "Aplicaciones web y de escritorio",
+        descripction: [
+            "Diseñar, crear y personalizar aplicaciones especificas desde cero, para que se adapten de la mejor manera a las necesidades de cada uno"
+        ],
+        btn: {
+            route: "/service/dedicated-software",
+            text: "Obtener presupuesto gratis"
+        }
+    },
+    {
+        title: "Tienda online",
+        subtitle: "Página web para tu negocio",
+        descripction: [
+            "Tus clientes podrán ver los productos en la web, armar su carrito y comprar lo que más le gusta",
+            "Puedes configurar lo que va a contener tu tienda para que se adapte de la mejor manera a tus necesidades"
+        ],
+        btn: {
+            route: "/service/e-commerce",
+            text: "Ver el contenido de tu tienda"
+        }
+    }
+]

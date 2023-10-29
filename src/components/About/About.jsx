@@ -26,7 +26,7 @@ const About = () => {
                     <p>
                         Además tengo conocimientos en React Native para el desarrollo de aplicaciones móviles multiplataforma.
                     </p>
-                    <a href={cv} target="_blank" rel="noopener noreferrer">Ver CV</a>
+                    {/* <a href={cv} target="_blank" rel="noopener noreferrer">Ver CV</a> */}
                 </div>
             </div>
         </section>

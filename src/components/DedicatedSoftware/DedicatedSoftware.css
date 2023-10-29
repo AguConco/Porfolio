@@ -30,11 +30,13 @@
     margin-bottom: 20px;
     font-size: 18px;
     display: block;
+    font-weight: 300;
 }
 
-.dedicated-software-section h3 {
+.dedicated-software-section span {
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 22px;
+    display: block;
 }
 
 .dedicated-software-section p {
@@ -77,11 +79,6 @@
 .start-project:hover div svg {
     animation: startProject 1s infinite;
 }
-/* 
-.start-project:hover div {
-    box-shadow: 0 0 0 3px #1872fa30;
-    border-color: #1872fa;
-} */
 
 @keyframes startProject {
     0% {

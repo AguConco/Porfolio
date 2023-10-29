@@ -47,6 +47,11 @@
 .description-service {
     font-size: 18px;
     color: #7d7d7d;
+    margin-bottom: 10px;
+}
+
+.description-service:last-child {
+    margin-bottom: 0;
 }
 
 .action-card-service {

@@ -1,6 +1,6 @@
 import utnba from "../../assets/img/utnba.jpg"
 import coder from "../../assets/img/coder.svg"
-import { certificate } from "../../constants"
+import { certificate } from "../../data/constants"
 import React from "react"
 import './Studies.css'
 import coderDesarrolloWeb from '../../assets/certificate/desarrollo-web.pdf'

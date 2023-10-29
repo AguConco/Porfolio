@@ -13,8 +13,8 @@ export const DedicatedSoftware = () => {
         <>
             <section className="dedicated-software-section">
                 <h1 className='dedicated-software-title'>Desarrollo de software a medida</h1>
-                <span className='dedicated-software-subtitle'>Diseñar, crear y personalizar aplicaciones especificas desde cero, para que se adapten de la mejor manera a las necesidades de cada uno</span>
-                <h3>¿Cómo lo haríamos?</h3>
+                <h3 className='dedicated-software-subtitle'>Diseñar, crear y personalizar aplicaciones especificas desde cero, para que se adapten de la mejor manera a las necesidades de cada uno</h3>
+                <span>¿Cómo lo haríamos?</span>
                 <p>
                     Al realizar un software a media, conversamos sobre cuales son tus necesidades o que problema querés solucionar.
                     Luego de hacer un análisis, te presento cómo lo podríamos hacer y cual sería la mejor manera.
