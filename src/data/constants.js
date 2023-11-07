@@ -37,7 +37,7 @@ export const certificate = <svg width="25" viewBox="0 0 347 317" fill="none">
 
 export const services = [
     {
-        title: "Desarrollo de software a medida",
+        title: "Desarrollo de aplicaciones a medida",
         subtitle: "Aplicaciones web y de escritorio",
         descripction: [
             "Diseñar, crear y personalizar aplicaciones especificas desde cero, para que se adapten de la mejor manera a las necesidades de cada uno"
@@ -51,7 +51,7 @@ export const services = [
         title: "Tienda online",
         subtitle: "Página web para tu negocio",
         descripction: [
-            "Tus clientes podrán ver los productos en la web, armar su carrito y comprar lo que más le gusta",
+            "Muestra tus productos en la web para que tus clientes puedan armar su carrito y comprar lo que más le gusta",
             "Puedes configurar lo que va a contener tu tienda para que se adapte de la mejor manera a tus necesidades"
         ],
         btn: {
@@ -59,4 +59,55 @@ export const services = [
             text: "Ver el contenido de tu tienda"
         }
     }
+]
+
+export const configEcommerce = [
+    {
+        name: "Página de inicio",
+        descripction: ["Se mostrarán diferentes productos. Por ejemplo los que tienen descuento, los más vendidos, nuevos ingresos, etc."],
+        obligatory: true
+    },
+    {
+        name: "Detalle del producto",
+        descripction: [
+            "Se mostrará toda la información relacionada al producto",
+            "Su foto, el nombre, una descripción, el precio, etc. junto con las opciones de comprar y agregar el carrito",
+        ],
+        obligatory: true
+    },
+    {
+        name: "Carrito de compras",
+        descripction: ["Carrito donde cada uno puede agregar los productos que más le interesan para luego hacer la compra"],
+        obligatory: true
+    },
+    {
+        name: "Panel de control",
+        descripction: [
+            "Permite administrar tus productos",
+            "Cargar y eliminar los productos, cambiar el precio, la foto, el stock, agregar algún descuento, marcar si está disponible, etc.",
+        ],
+        obligatory: true
+    },
+    {
+        name: "Pagos online",
+        descripction: [
+            "Permite pagar con la cuenta de Mercado Pago, con tarjetas de crédito y débito",
+            "Estos pagos llegarán a tu cuenta de Mercado Pago"
+        ],
+        obligatory: false
+    },
+    {
+        name: "Autenticación de usuarios",
+        descripction: [
+            "Permite que los usuarios creen su cuenta o conectarse con la de Google o Facebook"
+        ],
+        obligatory: false
+    },
+    {
+        name: "Página de ayuda",
+        descripction: [
+            "Se agregan datos de contacto y se brinda información al cliente de que hacer en caso de que tenga algún problema",
+        ],
+        obligatory: false
+    },
 ]

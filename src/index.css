@@ -11,8 +11,9 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins'; /* ver si usar 'viga'*/
+  font-family: 'Poppins';
   color: #575758;
+  box-sizing: border-box;
 }
 
 *::selection {
