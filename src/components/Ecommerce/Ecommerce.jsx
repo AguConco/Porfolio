@@ -8,8 +8,8 @@ import OptionConfig from '../OptionConfig/OptionConfig'
 
 const Ecommerce = () => {
 
-    const [currentSection, setCurrentSection] = useState('info')
-    const [selectedOptions, setSelectedOption] = useState()
+    const [currentSection, setCurrentSection] = useState('buisness-info')
+    const [selectedOptions, setSelectedOption] = useState([])
 
     document.onscroll = () => {
         if (window.location.pathname === '/service/e-commerce') {
@@ -27,7 +27,11 @@ const Ecommerce = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
+
+        setSelectedOption(configEcommerce.filter(e => e.obligatory === true))
     }, [])
+
+    // console.log(selectedOptions)
 
     return (
         <section className='section-service-ecommerce'>
@@ -57,7 +61,7 @@ const Ecommerce = () => {
                         <p className='ecommerce-subtitle-sections'>Configura la tienda seleccionando lo que mejor se adapte a tus necesidades</p>
                     </header>
                     <ul className="container-config">
-                        {configEcommerce.map(e => <OptionConfig key={e.name} e={e} />)}
+                        {configEcommerce.map(e => <OptionConfig key={e.name} selectedOptions={selectedOptions} setSelectedOption={setSelectedOption}  e={e} />)}
                     </ul>
                     <textarea placeholder='Funcionalidad o sección específica que necesites que tenga'></textarea>
                     <p className='terms-functions'>Las opciones que no se pueden quitar son obligatorias ya que son las funciones/secciones básicas para la tienda online</p>
@@ -70,7 +74,7 @@ const Ecommerce = () => {
                     </header>
                     <div className="data-hosting-domain">
                         <p>El hosting es un lugar en internet donde uno coloca todos los archivos necesarios para que la página web funciones correctamente</p>
-                        <p>El dominio es por donde uno accede a ese lugar donde esta la página web, por ejemplo www.ejemplo.com</p>
+                        <p>El dominio es por donde uno accede a ese lugar donde esta la página web, por ejemplo: www.nombre-del-dominio.com</p>
                         <p>Esto tiene un costo de mantenimiento y se renueva cada cierto tiempo dependiendo del plan. Estos pueden ser cada 1, 12 o 24 meses  </p>
                     </div>
                 </section>
@@ -79,8 +83,8 @@ const Ecommerce = () => {
                     <header>
                         <h4 className='ecommerce-title-sections'>Información personal</h4>
                     </header>
-                    <input type="email" placeholder='Correo electrónico'/>
-                    <input type="email" placeholder='Teléfono (opcional)'/>
+                    <input type="email" placeholder='Correo electrónico' />
+                    <input type="email" placeholder='Teléfono (opcional)' />
                 </section>
             </div>
             <div className='container-btn-continue'>

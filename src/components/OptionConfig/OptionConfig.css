@@ -45,13 +45,25 @@
     border-radius: 15px;
     border: 1px solid #ddd;
     background: none;
-    color: #1872fa;
     cursor: pointer;
 }
 
-.option-config span button:hover {
+.btn-add {
+    color: #1872fa;
+}
+
+.btn-add:hover {
     border-color: #1872fa;
     box-shadow: 0 0 0 3px #1872fa30;
+}
+
+.btn-remove {
+    color: #ec575a;
+}
+
+.btn-remove:hover {
+    border-color: #ec575a;
+    box-shadow: 0 0 0 3px #ec575a30;
 }
 
 .option-config p {
