@@ -1,10 +1,11 @@
-.sectionHome {
+.section-home {
     width: 100%;
     height: calc(100vh - 80px);
+    min-height: 735px;
     background: #fff;
 }
 
-.sectionHome>div {
+.section-home>div {
     max-width: 1024px;
     height: 100%;
     margin: auto;
@@ -13,7 +14,7 @@
     justify-content: space-between;
 }
 
-.sectionHome>div>div {
+.section-home>div>div {
     max-width: 600px;
 }
 
@@ -69,7 +70,8 @@
     line-height: 30px;
 }
 
-.btn-service ,.btn-projects {
+.btn-service,
+.btn-projects {
     padding: 7px 15px;
     border: 1px solid #1872fa;
     border-radius: 30px;
@@ -82,8 +84,8 @@
     color: #fff;
 }
 
-.sectionHome .btn-projects {
-    margin: 20px 10px 0 0;
+.section-home .btn-projects {
+    margin: 20px 10px 10px 0;
 }
 
 .btn-projects {
@@ -91,6 +93,48 @@
     color: #1872fa;
 }
 
-.btn-service:hover ,.btn-projects:hover {
+.btn-service:hover,
+.btn-projects:hover {
     box-shadow: 0 0 0 3px#1872fa30;
+}
+
+@media screen and (max-width: 1100px) {
+    .section-home>div {
+        max-width: 680px;
+
+    }
+
+    .container-img-home {
+        min-height: 250px;
+        min-width: 250px;
+        height: 250px;
+        width: 250px;
+        margin-left: 30px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .section-home {
+        width: 100%;
+        height: auto;
+        min-height: max-content;
+        background: #fff;
+        padding: 80px 0 120px;
+    }
+
+    .section-home>div {
+        max-width: 100%;
+        padding: 0 20px; 
+    }
+
+    .container-img-home {
+        display: none;
+    }
+
+    .title {
+        font-size: 34px;
+        line-height: 34px;
+    }
 }

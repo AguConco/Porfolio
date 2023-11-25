@@ -24,14 +24,16 @@ header>div {
 .nav-sections ul {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 10px;    
 }
 
 .nav-sections ul li a {
     padding: 5px 10px;
+    height: 37px;
+    display: inline-block;
 }
 
-.nav-sections ul li  .btn-service:hover {
+.nav-sections ul li .btn-service:hover {
     color: #FFFFFF;
 }
 
@@ -48,10 +50,6 @@ header>div {
     box-shadow: 0 0 0 3px#1872fa30;
 }
 
-.nav-sections ul li a {
-    fill: #575758;
-}
-
 .nav-sections ul li div {
     position: absolute;
     bottom: -5px;
@@ -62,12 +60,68 @@ header>div {
     transition: .2s;
 }
 
-.nav-sections ul li a {
-    font-size: 16px;
-    font-weight: 300;
-}
-
 .nav-sections ul li a:hover {
     color: #1872fa;
-    fill: #1872fa;
+}
+
+.icon-menu {
+    transform: rotateY(180deg);
+    height: 37px;
+    width: 37px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
+    header>div {
+        max-width: 680px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header>div {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .icon-menu {
+        display: flex;
+    }
+
+    .nav-section-home ul {
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background: #fff;
+        padding: 10px 0;
+        box-shadow: 0 5px 10px #00000010;
+        min-width: 100%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        height: 90px;
+    }
+
+    header>div {
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+    }
+
+
+    .nav-section-home ul {
+        top: 80px;
+        justify-content: center;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .nav-sections ul li a {
+    }
 }

@@ -1,153 +1,95 @@
 .section-service-ecommerce {
     max-width: 1024px;
     margin: 120px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: start;
-}
-
-.section-service-ecommerce aside {
-    position: sticky;
-    top: 100px;
-    left: 0;
-    width: 280px;
-}
-
-.section-service-ecommerce aside ul li a {
-    margin-bottom: 20px;
-    display: block;
-    position: relative;
-    left: 0;
-    transition: .1s;
-}
-
-.section-service-ecommerce aside ul li a:hover {
-    color: #1872fa;
 }
 
 .ecommerce-title {
     font-weight: 300;
-    margin: 10px 0 60px;
+    margin: 10px 0 5px;
     font-size: 26px;
-    width: 100%;
 }
 
-.section-content-ecommerce {
-    width: 700px;
-    scroll-margin: 140px;
-    margin-bottom: 80px;
+.description-config {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 40px;
 }
 
-.section-content-ecommerce header {
-    box-shadow: none;
-    z-index: 0;
-    position: relative;
-    background: transparent;
+.subtitle-section {
+    font-size: 18px;
+    margin: 10px 0;
 }
 
-.business-info {
-    margin-top: 15px;
-}
-
-.ecommerce-title-sections {
-    font-size: 20px;
-    font-weight: 300;
-}
-
-.ecommerce-subtitle-sections {
-    font-size: 16px;
-}
-
-.terms-functions {
-    font-size: 14px;
-    color: #aaa;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.section-service-ecommerce textarea {
-    resize: none;
-    width: 100%;
-    outline: none;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    font-size: 14px;
-    min-height: 100px;
-}
-
-.section-service-ecommerce textarea:focus, .section-service-ecommerce input:focus {
-    border: 1px solid #1872fa;
-    box-shadow: 0 0 0 3px #1872fa30;
-}
-
-.section-service-ecommerce input {
-    border-radius: 10px;
-    padding: 10px 15px;
-    outline: none;
-    margin-right: 15px;
-    border: 1px solid #ddd;
-    width: 300px;
+.content-ecommerce-list {
+    margin: 10px 0 80px;
+    display: block;
 }
 
 .data-hosting-domain p {
-    display: inline-block;
     margin-bottom: 10px;
+    font-size: 18px;
+    display: block;
 }
 
-.container-btn-continue {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-}
-
-.btn-continue {
+.start-project {
     margin-top: 60px;
     display: inline-flex;
     align-items: center;
     gap: 20px;
-
+    
 }
 
-.btn-continue div {
+.start-project div {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    width: 50px;
+    height: 50px;
+    width: 40px;
     border-radius: 30px;
     border: 1px solid #ddd;
 }
 
-.btn-continue div svg {
+.start-project div svg {
     position: relative;
     transition: .3s;
 }
 
-.btn-continue div svg path {
+.start-project div svg path {
     fill: #1872fa;
 }
 
-.btn-continue span {
+.start-project span {
     color: #1872fa;
     font-size: 18px;
 }
 
-.btn-continue:hover div svg {
-    animation: contactPlan 1s infinite;
+.start-project:hover div svg {
+    animation: startProject 1s infinite;
 }
 
-@keyframes contactPlan {
+@keyframes startProject {
     0% {
-        left: 0
+        top: 0
     }
 
     50% {
-        left: 3px;
+        top: 3px;
     }
 
     100% {
-        left: 0;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .section-service-ecommerce {
+        max-width: 680px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .section-service-ecommerce {
+        max-width: 100%;
+        padding: 0 20px;
     }
 }

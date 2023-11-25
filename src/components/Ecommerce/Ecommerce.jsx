@@ -1,103 +1,42 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import './Ecommerce.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-router-dom'
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import { configEcommerce } from '../../data/constants'
 import OptionConfig from '../OptionConfig/OptionConfig'
 
 const Ecommerce = () => {
 
-    const [currentSection, setCurrentSection] = useState('buisness-info')
-    const [selectedOptions, setSelectedOption] = useState([])
-
-    document.onscroll = () => {
-        if (window.location.pathname === '/service/e-commerce') {
-            const section_1 = document.getElementById('buisness-info')
-            const section_2 = document.getElementById('functions')
-            const section_3 = document.getElementById('hosting-domain')
-            const section_4 = document.getElementById('personal-info')
-
-            window.scrollY > section_1.offsetTop - 350 && setCurrentSection('buisness-info')
-            window.scrollY > section_2.offsetTop - 350 && setCurrentSection('functions')
-            window.scrollY > section_3.offsetTop - 350 && setCurrentSection('hosting-domain')
-            window.scrollY > section_4.offsetTop - 350 && setCurrentSection('personal-info')
-        }
-    }
-
     useEffect(() => {
         window.scrollTo(0, 0)
-
-        setSelectedOption(configEcommerce.filter(e => e.obligatory === true))
     }, [])
-
-    // console.log(selectedOptions)
 
     return (
         <section className='section-service-ecommerce'>
             <h1 className='ecommerce-title'>Tienda online</h1>
-            <aside>
-                <nav>
-                    <ul>
-                        <li><a style={currentSection === 'buisness-info' ? { color: '#1872fa', left: '5px' } : {}} href="#buisness-info">Información del negocio</a></li>
-                        <li><a style={currentSection === 'functions' ? { color: '#1872fa', left: '5px' } : {}} href="#functions">Secciones y Funciones</a></li>
-                        <li><a style={currentSection === 'hosting-domain' ? { color: '#1872fa', left: '5px' } : {}} href="#hosting-domain">Hosting y Dominio</a></li>
-                        <li><a style={currentSection === 'personal-info' ? { color: '#1872fa', left: '5px' } : {}} href="#personal-info">Información personal</a></li>
-                    </ul>
-                </nav>
-            </aside>
-            <div className='data-ecommerce'>
-                <section className='section-content-ecommerce' id='buisness-info'>
-                    <header>
-                        <h4 className='ecommerce-title-sections'>Información del negocio</h4>
-                        <p className='ecommerce-subtitle-sections'>Una breve descripción del negocio sobre que venden, hace cuantos años están, cual es su principal objetivo, etc. </p>
-                    </header>
-                    <textarea className='business-info' placeholder='Respuesta...' />
-                </section>
+            <p className='description-config'>Acá podrás ver las secciones y funcionalidades que puede contener tu tienda. </p>
+            <section>
+                <h4 className='title-section'>Secciones y funcionalidades</h4>
+                <ul className="content-ecommerce-list">
+                    {configEcommerce.map(e => <OptionConfig key={e.name} e={e} />)}
+                </ul>
+            </section>
 
-                <section className='section-content-ecommerce' id='functions'>
-                    <header>
-                        <h4 className='ecommerce-title-sections'>Secciones y funcionalidades que contiene</h4>
-                        <p className='ecommerce-subtitle-sections'>Configura la tienda seleccionando lo que mejor se adapte a tus necesidades</p>
-                    </header>
-                    <ul className="container-config">
-                        {configEcommerce.map(e => <OptionConfig key={e.name} selectedOptions={selectedOptions} setSelectedOption={setSelectedOption}  e={e} />)}
-                    </ul>
-                    <textarea placeholder='Funcionalidad o sección específica que necesites que tenga'></textarea>
-                    <p className='terms-functions'>Las opciones que no se pueden quitar son obligatorias ya que son las funciones/secciones básicas para la tienda online</p>
-                </section>
-
-                <section className='section-content-ecommerce' id='hosting-domain'>
-                    <header>
-                        <h4 className='ecommerce-title-sections'>Hosting y Dominio</h4>
-                        <p className='ecommerce-subtitle-sections'>¿Qué es el hosting y dominio? ¿porque necesitarias uno?</p>
-                    </header>
-                    <div className="data-hosting-domain">
-                        <p>El hosting es un lugar en internet donde uno coloca todos los archivos necesarios para que la página web funciones correctamente</p>
-                        <p>El dominio es por donde uno accede a ese lugar donde esta la página web, por ejemplo: www.nombre-del-dominio.com</p>
-                        <p>Esto tiene un costo de mantenimiento y se renueva cada cierto tiempo dependiendo del plan. Estos pueden ser cada 1, 12 o 24 meses  </p>
-                    </div>
-                </section>
-
-                <section className='section-content-ecommerce' id='personal-info'>
-                    <header>
-                        <h4 className='ecommerce-title-sections'>Información personal</h4>
-                    </header>
-                    <input type="email" placeholder='Correo electrónico' />
-                    <input type="email" placeholder='Teléfono (opcional)' />
-                </section>
-            </div>
-            <div className='container-btn-continue'>
-                <Link to={"/service/e-commerce/contact"} className='btn-continue'>
-                    <span> Continuar </span>
-                    <div>
-                        <FontAwesomeIcon icon={faArrowRight} />
-                    </div>
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" /></svg>
-                    </div>
-                </Link>
-            </div>
+            <section>
+                <h4 className='title-section'>Hosting y Dominio</h4>
+                <p className='subtitle-section'>¿Qué es el hosting y dominio? ¿porque necesitarias uno?</p>
+                <div className="data-hosting-domain">
+                    <p>El hosting es un lugar en internet donde uno coloca todos los archivos necesarios para que la página web funciones correctamente</p>
+                    <p>El dominio es por donde uno accede a ese lugar donde esta la página web, por ejemplo <pre>"www.nombre-del-dominio.com"</pre></p>
+                    <p>Esto tiene un costo de mantenimiento y se renueva cada cierto tiempo dependiendo del plan. Estos pueden ser cada 1, 12 o 24 meses  </p>
+                </div>
+            </section>
+            <a href='#contact' className='start-project'>
+                <div>
+                    <FontAwesomeIcon icon={faArrowDown} />
+                </div>
+                <span> Empezar tienda online </span>
+            </a>
         </section>
     )
 }

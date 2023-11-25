@@ -3,11 +3,11 @@ import './About.css'
 import computer from '../../assets/img/background.jpg'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCode } from "@fortawesome/free-solid-svg-icons"
-import cv from '../../assets/cv/cv-agustin-concollato.pdf'
+// import cv from '../../assets/cv/cv-agustin-concollato.pdf'
 
 const About = () => {
     return (
-        <section id="about" className="sectionAbout">
+        <section id="about" className="section-about">
             <div>
                 <div className="containerImg">
                     <img src={computer} alt="computadora programación" />
@@ -23,9 +23,9 @@ const About = () => {
                         Me destaco en el diseño de sitios web con interfaces dinámicas, atractivas, minimalistas y receptivas
                         mediante la escritura de código limpio y optimizado para ofrecer una experiencia de usuario fluida.
                     </p>
-                    <p>
-                        Además tengo conocimientos en React Native para el desarrollo de aplicaciones móviles multiplataforma.
-                    </p>
+                    {/* <p>
+                        Además tengo conocimientos en React Native para el desarrollo de aplicaciones móviles.
+                    </p> */}
                     {/* <a href={cv} target="_blank" rel="noopener noreferrer">Ver CV</a> */}
                 </div>
             </div>

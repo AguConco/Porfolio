@@ -15,6 +15,7 @@
 .containerStudies {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .study {
@@ -72,6 +73,7 @@
     justify-content: space-between;
     margin: 7px 0;
     padding: 5px 10px;
+    gap: 10px;
 }
 
 .study ul li a {
@@ -79,10 +81,35 @@
     top: 4px;
 }
 
-.study ul li a:hover .svgChange { 
+.study ul li a:hover .svgChange {
     fill: #1872fa;
 }
 
-.study ul li a:hover path, .study ul li a:hover circle {
+.study ul li a:hover path,
+.study ul li a:hover circle {
     stroke: #1872fa;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .sectionStudies>div {
+        max-width: 680px;
+
+    }
+
+    .study {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .sectionStudies>div {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .study {
+        width: 100%;
+    }
 }

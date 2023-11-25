@@ -71,3 +71,16 @@
     color: #fff;
     box-shadow: 0 0 0 3px#1872fa30;
 }
+
+@media screen and (max-width: 1100px) {
+    #service {
+        max-width: 680px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #service {
+        max-width: 100%;
+        padding: 120px 20px;
+    }
+}

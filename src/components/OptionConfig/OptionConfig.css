@@ -7,6 +7,7 @@
     justify-content: space-between;
     align-items: start;
     overflow: hidden;
+    cursor: pointer;
 }
 
 
@@ -24,11 +25,11 @@
     cursor: pointer;
 }
 
-.option-config .btn-expand:hover svg path {
+.option-config:hover .btn-expand svg path {
     fill: #1872fa;
 }
 
-.option-config .btn-expand:hover {
+.option-config:hover .btn-expand {
     background: #f9f9f9;
 }
 
