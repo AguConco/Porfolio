@@ -37,7 +37,7 @@ const Projects = () => {
     return (
         <section id="projects" className="sectionProjects" >
             <div className="header-project">
-                <h3 className="title-section" >PROYECTOS</h3>
+                <h2 className="title-section" >PROYECTOS</h2>
                 <p>
                     Estos proyectos fueron realizados en los cursos que hice.
                     Aunque no necesariamente tienen un propósito funcional para otros,

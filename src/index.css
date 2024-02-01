@@ -8,6 +8,10 @@
   src: url(./assets/fonts/Poppins-Medium.ttf);
 }
 
+:root {
+  --primary: #2d65c0
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -37,12 +41,11 @@ body {
   background: #fff;
 }
 
-section {
-  scroll-margin: 80px;
+body>div {
+  -webkit-transform: scale(0);
+  transform: scale(0);
 }
 
-.title-section {
-  color: #1872fa;
-  font-size: 18px;
-  text-transform: uppercase;
+section {
+  scroll-margin: 80px;
 }

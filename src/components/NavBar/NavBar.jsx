@@ -1,64 +1,24 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link, useParams } from 'react-router-dom'
 import './NavBar.css'
-import { Link } from 'react-router-dom'
-import { faBars, faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 
-const NavBar = ({ status }) => {
+export const NavBar = () => {
 
-    const [menu, setMenu] = useState(true)
-
-    window.onresize = () => {
-        window.innerWidth > 699 && setMenu(true)
-    }
+    const path = useParams()
+    const selected = path['*']
 
     useEffect(() => {
-        window.innerWidth < 699 && setMenu(false)
-    }, [])
+        selected && scrollTo(0, document.getElementById('home').clientHeight + 28)
+    }, [selected])
 
     return (
-        <header>
-            <div>
-                <Link to='/' className="logo">
-                    CONCO
-                </Link>
-                <nav className="nav-sections">
-                    <ul>
-                        {status
-                            ? <nav className='nav-section-home'>
-                                {menu &&
-                                    <ul>
-                                        <li>
-                                            <a href="/#home"> Inicio </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="/#about"> <pre>Sobre mí</pre> </a>
-                                        </li>
-                                        <li>
-                                            <a href="/#projects"> Proyectos </a>
-                                        </li>
-                                    </ul>}
-                            </nav>
-                            : <li>
-                                <Link to={"/"} >Inicio</Link>
-                            </li>
-                        }
-                        <li>
-                            <a className="btn-contact" href="#contact"> Contacto </a>
-                        </li>
-                        <li>
-                            <Link to="/service" className='btn-service'>Servicios</Link>
-                        </li>
-                        {status
-                            && <li className='icon-menu' onClick={() => setMenu(!menu)}>
-                                <FontAwesomeIcon icon={menu ? faBarsStaggered : faBars} />
-                            </li>}
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        <nav>
+            <ul className={selected || 'service'} >
+                <li><Link to={'/service'}> Servicio </Link></li>
+                <li><Link to={'/jobs'}> Trabajos </Link></li>
+                <li><Link to={'/projects'}> Proyectos </Link></li>
+                <div></div>
+            </ul>
+        </nav >
     )
 }
-
-export default NavBar

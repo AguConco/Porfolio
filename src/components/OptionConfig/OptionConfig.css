@@ -1,6 +1,5 @@
 .option-config {
     padding: 15px 0;
-    border-bottom: 1px solid #ddd;
     background: #fff;
     margin-bottom: 20px;
     display: flex;
@@ -26,19 +25,34 @@
 }
 
 .option-config:hover .btn-expand svg path {
-    fill: #1872fa;
+    fill: var(--primary);
 }
 
 .option-config:hover .btn-expand {
     background: #f9f9f9;
 }
 
-.option-config span {
+.section-service .option-config span {
     font-size: 18px;
     margin-bottom: 15px;
     display: inline-flex;
     align-items: center;
     gap: 15px;
+    text-align: start;
+    font-weight: 300;
+    color: var(--primary);
+}
+
+.option-config li::first-letter {
+    padding: 0  15px 0 30px;
+    color: #aaa;
+    font-size: 13px;
+}
+
+.option-config li {
+    font-size: 18px;
+    margin: 5px 0;
+    display: block;
 }
 
 .option-config span button {
@@ -49,23 +63,6 @@
     cursor: pointer;
 }
 
-.btn-add {
-    color: #1872fa;
-}
-
-.btn-add:hover {
-    border-color: #1872fa;
-    box-shadow: 0 0 0 3px #1872fa30;
-}
-
-.btn-remove {
-    color: #ec575a;
-}
-
-.btn-remove:hover {
-    border-color: #ec575a;
-    box-shadow: 0 0 0 3px #ec575a30;
-}
 
 .option-config p {
     font-size: 16px;

@@ -6,7 +6,7 @@ export const ServiceList = () => {
         <section id='service'>
             <h3 className="title-section">SERVICIOS</h3>
             <div className='container-card-service'>
-                {services.map(e => (
+                {services.map((e,i) => (
                     <div className="card-service">
                         <h5 className="title-service">{e.title} <span>{e.subtitle}</span></h5>
                         <div className="container-description">

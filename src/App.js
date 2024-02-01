@@ -1,15 +1,13 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom';
-import { Service } from './components/Service/Service'
-import { PageInit } from './components/PageInit/PageInit'
+import { Main } from './components/Main/Main'
 
 
 const App = () => {
   return (
     <div className="App">
       <Routes>
-        <Route path='/' element={<PageInit />} />
-        <Route path='/service/*' element={<Service />} />
+        <Route path='/*' element={<Main />} />
       </Routes>
     </div>
   )

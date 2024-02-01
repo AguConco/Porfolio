@@ -63,51 +63,46 @@ export const services = [
 
 export const configEcommerce = [
     {
-        name: "Página de inicio",
-        descripction: ["Se mostrarán diferentes productos. Por ejemplo los que tienen descuento, los más vendidos, nuevos ingresos, etc."],
-        obligatory: true
-    },
-    {
-        name: "Detalle del producto",
+        name: "Control de stock y punto de venta",
         descripction: [
-            "Se mostrará toda la información relacionada al producto",
-            "Su foto, el nombre, una descripción, el precio, etc. junto con las opciones de comprar y agregar el carrito",
+            "● Cargar los productos con su respectiva información (foto, precio, talle, nombre, descripción, stock, código de barras), todos estos puntos son adaptados al tipo de producto que vendas",
+            "● Modificar la información de los productos en cualquier momento",
+            "● Generar remitos con el detalle de la compra / pedido y descargarlo en PDF",
+            "● Cargar los clientes y tener un historial de compra"
         ],
-        obligatory: true
     },
     {
-        name: "Carrito de compras",
-        descripction: ["Carrito donde cada uno puede agregar los productos que más le interesan para luego hacer la compra"],
-        obligatory: true
-    },
-    {
-        name: "Panel de control",
+        name: "Tienda online",
         descripction: [
-            "Permite administrar tus productos",
-            "Cargar y eliminar los productos, cambiar el precio, la foto, el stock, agregar algún descuento, marcar si está disponible, etc.",
+            "● Simple panel de control para administrar y controlar los productos o servicios que se ofrecen",
+            "● El usuario podrá ver todos los productos filtrarlos por categorías, subcategorías, precio, etc",
+            "● Ver el detalle de cada producto",
+            "● Armar su carrito de compras con los productos que más le interesan para luego comprar",
+            "● Autenticación de usuarios, permite crear su cuenta o conectarse con la de Google o Facebook",
+            "● Pagos en línea con tarjetas de crédito o débito y con la cuenta de Mercado Pago"
         ],
-        obligatory: true
     },
     {
-        name: "Pagos online",
+        name: "Sistema para pacientes",
         descripction: [
-            "Permite pagar con la cuenta de Mercado Pago, con tarjetas de crédito y débito",
-            "Estos pagos llegarán a tu cuenta de Mercado Pago"
+            "● Registrar el paciente (persona o animal) con los datos necesarios",
+            "● Completar una ficha de cada consulta y turno que tenga el paciente",
+            "● Historial de las fichas completada junto con lo que se recetó"
         ],
-        obligatory: false
     },
     {
-        name: "Autenticación de usuarios",
+        name: "Sistema para gimnasio",
         descripction: [
-            "Permite que los usuarios creen su cuenta o conectarse con la de Google o Facebook"
+            "● Tendrán la rutina en el celular e ir marcando que ejercicios ya terminaron, si no siguen una rutina ya hecha, podrán hacer su propia rutina a medida",
+            "● Muestra cómo se hace cada ejercicio, que grupo muscular trabaja y en que maquinas o que se necesita para realizarlo"
         ],
-        obligatory: false
     },
     {
-        name: "Página de ayuda",
+        name: "Invitaciones para casamientos",
         descripction: [
-            "Se agregan datos de contacto y se brinda información al cliente de que hacer en caso de que tenga algún problema",
+            "● Información de fecha y hora de la ceremonia religiosa (misa) y celebración (fiesta)",
+            "● Confirmar la asistencia con opciones del menú y formas de pago",
+            "● Secciones para que puedan hacer algún regalo, agregar su canción preferida a la playlist y si quieren con partir las fotos que fueron sacando en la noche"
         ],
-        obligatory: false
     },
 ]

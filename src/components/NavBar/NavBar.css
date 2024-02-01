@@ -1,127 +1,55 @@
-header {
-    width: 100%;
-    box-shadow: 0 5px 20px #00000010;
-    height: 80px;
-    position: sticky;
-    top: 0;
-    background: #fff;
-    z-index: 10000;
-}
-
-header>div {
+nav {
     max-width: 1024px;
-    height: 100%;
     margin: auto;
+}
+
+nav ul {
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 360px;  
+    margin: auto;  
 }
 
-.logo::first-letter {
-    color: #1872fa;
-}
-
-.nav-sections ul {
-    display: flex;
-    align-items: center;
-    gap: 10px;    
-}
-
-.nav-sections ul li a {
-    padding: 5px 10px;
-    height: 37px;
+nav ul li a {
+    padding: 10px;
     display: inline-block;
+    width: 120px;
+    text-align: center;
+    font-size: 18px;
 }
 
-.nav-sections ul li .btn-service:hover {
-    color: #FFFFFF;
-}
-
-.btn-contact {
-    border: 1px solid #ddd;
-    padding: 5px 15px;
-    border-radius: 30px;
-    color: #1872fa;
-    margin-left: 5px;
-}
-
-.btn-contact:hover {
-    border: 1px solid #1872fa;
-    box-shadow: 0 0 0 3px#1872fa30;
-}
-
-.nav-sections ul li div {
+nav div {
+    background: #aaaaaa15;
+    padding: 5px;
     position: absolute;
-    bottom: -5px;
+    bottom: 2.5px;
+    width: 120px;
+    height: 40px;
+    pointer-events: none;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.service div {
     left: 0;
-    width: 0;
-    height: 2px;
-    background: #1872fa;
-    transition: .2s;
 }
 
-.nav-sections ul li a:hover {
-    color: #1872fa;
+.service li:first-child a{
+    color: var(--primary);
 }
 
-.icon-menu {
-    transform: rotateY(180deg);
-    height: 37px;
-    width: 37px;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+.jobs div {
+    left: 120px;
 }
 
-@media screen and (max-width: 1100px) {
-    header>div {
-        max-width: 680px;
-    }
+.jobs li:nth-child(2) a{
+    color: var(--primary);
 }
 
-@media screen and (max-width: 700px) {
-    header>div {
-        max-width: 100%;
-        padding: 0 20px;
-    }
-
-    .icon-menu {
-        display: flex;
-    }
-
-    .nav-section-home ul {
-        position: absolute;
-        right: 0;
-        top: 75px;
-        background: #fff;
-        padding: 10px 0;
-        box-shadow: 0 5px 10px #00000010;
-        min-width: 100%;
-        justify-content: center;
-    }
+.projects div {
+    left: 240px;
 }
 
-@media screen and (max-width: 400px) {
-    header {
-        height: 90px;
-    }
-
-    header>div {
-        flex-direction: column;
-        justify-content: center;
-        gap: 5px;
-    }
-
-
-    .nav-section-home ul {
-        top: 80px;
-        justify-content: center;
-        padding: 10px 0;
-    }
-}
-
-@media screen and (max-width: 365px) {
-    .nav-sections ul li a {
-    }
+.projects li:nth-child(3) a{
+    color: var(--primary);
 }

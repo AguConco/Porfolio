@@ -1,86 +1,65 @@
-#service {
+.section-service {
     margin: auto;
     max-width: 1024px;
-    padding: 120px 0;
-}
-
-.container-card-service {
-    margin-top: 60px;
-    max-width: 700px;
-}
-
-.card-service {
-    margin-bottom: 60px;
-    padding-bottom: 60px;
-    border-bottom: 1px solid #ddd;
-}
-
-.card-service:last-child {
-    border: none;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-
-.title-service {
-    font-size: 26px;
-    margin-bottom: 45px;
+    padding: 60px 0;
+    animation: fade .5s 1;
     position: relative;
 }
 
-.title-service span {
-    position: absolute;
-    top: 100%;
-    font-size: 16px;
-    left: 0;
-    color: #aaa;
-    font-weight: 300;
+@keyframes fade {
+    0% {
+        opacity: .3;
+        top: 20px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
 }
 
-.container-description {
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 15px;
-}
-
-
-.description-service {
-    font-size: 18px;
-    color: #7d7d7d;
-    margin-bottom: 10px;
-}
-
-.description-service:last-child {
-    margin-bottom: 0;
-}
-
-.action-card-service {
-    margin-top: 20px;
-    background: #ffffff;
-    padding: 10px 15px;
+.section-service h2 {
+    font-size: 35px;
+    font-weight: 900;
+    text-transform: uppercase;
     text-align: center;
-    border-radius: 30px;
-    font-size: 16px;
-    border: 1px solid #1872fa;
-    color: #1872fa;
-    display: inline-block;
+    color: var(--primary);
 }
 
-.action-card-service:hover {
-    background: #1872fa;
-    color: #fff;
-    box-shadow: 0 0 0 3px#1872fa30;
+.section-service h3 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    color: #aaa;
 }
 
-@media screen and (max-width: 1100px) {
-    #service {
-        max-width: 680px;
-    }
+.section-service-p {
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 18px;
 }
 
-@media screen and (max-width: 700px) {
-    #service {
-        max-width: 100%;
-        padding: 120px 20px;
-    }
+.section-service span {
+    font-size: 22px;
+    display: block;
+    text-align: center;
+    font-weight: 900;
+}
+
+.section-service>div {
+    border-radius: 10px;
+    margin: 60px auto;
+}
+
+
+.section-service .app-list {
+    margin-top: 60px;
+}
+
+.divisor {
+    height: 2px;
+    width: 300px;
+    background: #eee;
 }
