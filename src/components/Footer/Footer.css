@@ -24,16 +24,6 @@ footer ul {
     gap: 20px;
 }
 
-footer ul a {
-    color: #ddd;
-    font-size: 14px;
-    font-weight: 300;
-    padding: 10px 15px;
-    display: inline-block;
-    border-radius: 30px;
-    border: 1px solid #4b4b4b;
-}
-
 footer ul button {
     background: none;
     border: none;
@@ -41,6 +31,16 @@ footer ul button {
     padding: 10px 15px;
     cursor: pointer;
     color: #ddd;
+}
+
+footer ul li:nth-child(2) button {
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 30px;
+    border: 1px solid #4b4b4b;
 }
 
 footer ul button:hover {
@@ -51,4 +51,65 @@ footer ul a:hover {
     color: #fff;
     border-color: #eee;
     box-shadow: 0 0 0 3px #4b4b4b;
+}
+
+.modal {
+    height: 100vh;
+    max-width: 100vw;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal>div:first-child {
+    position: relative;
+    z-index: 100;
+    background: #fff;
+    height: 90%;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #00000099;
+    cursor: pointer;
+}
+
+iframe {
+    width: 100%;
+    height: 93%;
+}
+
+.close-modal {
+    padding: 10px 20px ;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 16px;
+    color: var(--primary);
+    cursor: pointer;
+    width: 100px;
+    margin-left: calc(50% - 50px);
+    background: #fff;
+
+}
+
+.close-modal:hover {
+    box-shadow: 0 0 0 3px #2d65c030;
+    border-color: var(--primary);
+}
+
+.divisor-v {
+    height: 300px;
+    width: 2px;
+    background: #eee;
 }

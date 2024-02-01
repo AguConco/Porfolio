@@ -2,28 +2,33 @@
     padding: 120px 0;
 }
 
+.sectionContact h3 {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
 .sectionContact>div {
     max-width: 1024px;
     margin: auto;
 }
 
-.sectionContact .title-section {
-    margin-bottom: 10px;
-}
-
 .sectionContact>div>span {
     color: #7d7d7d;
     font-size: 18px;
+    text-align: center;
+    display: block;
 }
 
 .containerContactCard {
-    display: flex;
     margin-top: 40px;
-    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .contactCard {
     margin-right: 30px;
+    display: flex;
 }
 
 .contactCard span {
@@ -34,11 +39,28 @@
 }
 
 .contactCard a {
-    font-size: 14px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px auto;
+}
+
+.contactCard a svg {
+    height: 20px;
+    width: 20px;
+}
+
+.contactCard a svg path{
+    fill: #575758;
 }
 
 .contactCard a:hover {
     color: #1872fa;
+}
+
+.contactCard a:hover svg path {
+    fill: #1872fa;
 }
 
 @media screen and (max-width: 1100px) {

@@ -1,9 +1,9 @@
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useEffect, useState } from "react"
-import './OptionConfig.css'
+import './ServiceList.css'
 
-const OptionConfig = ({ e }) => {
+const ServiceList = ({ e }) => {
 
     const [expand, setExpand] = useState(false)
 
@@ -22,4 +22,4 @@ const OptionConfig = ({ e }) => {
     )
 }
 
-export default OptionConfig
+export default ServiceList

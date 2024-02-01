@@ -1,31 +1,21 @@
 .sectionStudies {
-    padding: 120px 0;
-}
-
-.sectionStudies>div {
-    max-width: 1024px;
-    margin: auto;
-}
-
-.sectionStudies .title-section {
-    margin-bottom: 20px;
-}
-
-.containerStudies {
+    height: 93%;
+    width: 100%;
+    padding-bottom: 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
 .study {
-    width: 400px;
+    flex-grow: 1;
+    flex-basis: 0;
     padding: 20px;
     border-radius: 10px;
     background: #fff;
-}
-
-.study:hover {
-    box-shadow: 0 15px 30px #00000010;
+    height: 100%;
 }
 
 .study>div {
