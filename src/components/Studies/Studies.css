@@ -7,6 +7,7 @@
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+    overflow-y: auto;
 }
 
 .study {
@@ -16,6 +17,7 @@
     border-radius: 10px;
     background: #fff;
     height: 100%;
+    min-height: 400px;
 }
 
 .study>div {
@@ -79,26 +81,35 @@
     stroke: #1872fa;
 }
 
+.divisor-v {
+    height: 300px;
+    width: 2px;
+    background: #eee;
+}
 
-@media screen and (max-width: 1100px) {
-    .sectionStudies>div {
-        max-width: 680px;
 
+@media screen and (max-width: 1000px) {
+    .sectionStudies {
+        justify-content: start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-bottom: 20px;
     }
 
     .study {
-        width: 80%;
+        width: 100%;
+        min-height: fit-content;
+    }
+
+    .divisor-v {
+        display: none;
     }
 }
 
 @media screen and (max-width: 700px) {
 
-    .sectionStudies>div {
-        max-width: 100%;
-        padding: 0 20px;
-    }
-
     .study {
         width: 100%;
+        padding: 0;
     }
 }

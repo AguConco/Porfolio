@@ -37,6 +37,7 @@
     display: inline-block;
     margin-bottom: 20px;
     text-align: center;
+    font-size: 18px;
 }
 
 .header-project div {
@@ -63,18 +64,17 @@
 
 .container-projects {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 40px;
 }
 
 .project {
-    margin: 20px 0;
     border-radius: 10px;
     width: 490px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: .2s;
 }
 
 .project h4 img {
@@ -114,13 +114,13 @@
 }
 
 .project a:hover {
-    color: #1872fa;
-    border-color: #1872fa;
-    box-shadow: 0 0 0 3px#1872fa30;
+    color: var(--primary);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px#2d65c030;
 }
 
 .project a:hover svg path {
-    fill: #1872fa;
+    fill: var(--primary);
 }
 
 .container-img-project {
@@ -154,8 +154,28 @@
 }
 
 @media screen and (max-width: 1100px) {
-    .sectionProjects {
-        max-width: 680px;
+    .header-project p {
+        padding: 0 20px;
+    }
+
+    .sectionProjects .container-projects {
+        max-width: 840px;
+    }
+
+    .project {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+
+    .sectionProjects .container-projects {
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .project {
+        width: 490px;
     }
 }
 

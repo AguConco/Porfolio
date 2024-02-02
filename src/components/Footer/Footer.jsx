@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './Footer.css'
 import Studies from '../Studies/Studies'
 import CV from '../../assets/cv/cv-agustin-concollato.pdf'
@@ -9,6 +9,15 @@ export const Footer = () => {
     const [data, setData] = useState(null)
 
     const Modal = ({ data }) => {
+
+        const body = document.querySelector('body')
+
+        console.log(body.style.overflow = 'hidden')
+
+        useEffect(() => {
+            return () => body.style.overflow = 'auto'
+        }, [])
+
         return (
             <div className='modal'>
                 <div>
@@ -25,16 +34,16 @@ export const Footer = () => {
 
     return (
         <>
-        {data !== null && <Modal data={data} />}
-        <footer>
-            <div>
-                <h4>Agustin Concollato</h4>
-                <ul>
-                    <li><button onClick={() => setData('studies')}>Mis estudios</button></li>
-                    <li><button onClick={() => setData('cv')}>ver cv</button></li>
-                </ul>
-            </div>
-        </footer>
+            {data !== null && <Modal data={data} />}
+            <footer>
+                <div>
+                    <h4>Agustin Concollato</h4>
+                    <ul>
+                        <li><button onClick={() => setData('studies')}>Mis estudios</button></li>
+                        <li><button onClick={() => setData('cv')}>ver cv</button></li>
+                    </ul>
+                </div>
+            </footer>
         </>
     )
 }

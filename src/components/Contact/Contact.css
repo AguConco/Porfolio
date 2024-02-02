@@ -27,7 +27,6 @@
 }
 
 .contactCard {
-    margin-right: 30px;
     display: flex;
 }
 
@@ -79,4 +78,13 @@
         gap: 20px;
     }
 
+    .contactCard a {
+        font-size: 16px;
+    }
+
+    .contactCard a svg {
+        height: 18px;
+        width: 18px;
+    }
+    
 }

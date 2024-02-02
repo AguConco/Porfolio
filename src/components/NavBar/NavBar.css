@@ -53,3 +53,7 @@ nav div {
 .projects li:nth-child(3) a{
     color: var(--primary);
 }
+
+@media screen and (max-width: 1100px) {
+
+}

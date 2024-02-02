@@ -69,10 +69,13 @@ footer ul a:hover {
     position: relative;
     z-index: 100;
     background: #fff;
-    height: 90%;
+    max-height: 90%;
+    max-width: 1024px;
     width: 80%;
     padding: 20px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .modal-background {
@@ -87,7 +90,8 @@ footer ul a:hover {
 
 iframe {
     width: 100%;
-    height: 93%;
+    height: 700px;
+    margin-bottom: 20px;
 }
 
 .close-modal {
@@ -108,8 +112,22 @@ iframe {
     border-color: var(--primary);
 }
 
-.divisor-v {
-    height: 300px;
-    width: 2px;
-    background: #eee;
+@media screen and (max-width: 1055px) {
+    footer>div {
+        padding:  0 20px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    footer>div {
+        padding: 0 20px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    footer h4 {
+        font-size: 14px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
 }
