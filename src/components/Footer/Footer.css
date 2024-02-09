@@ -130,4 +130,14 @@ iframe {
         padding: 10px;
         margin-bottom: 10px;
     }
+
+    .modal {
+        align-items: start;
+    }
+
+    .modal>div:first-child {
+        width: 95%;
+        height: 80%;
+        margin-top: 20px;
+    }
 }

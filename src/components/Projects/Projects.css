@@ -21,7 +21,7 @@
     }
 }
 
-.sectionProjects>div {
+.header-project {
     max-width: 1024px;
     margin: auto;
 }
@@ -66,6 +66,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    max-width: 1024px;
+    margin: 60px auto 0;
 }
 
 .project {
@@ -82,13 +84,12 @@
     width: 30px;
     object-fit: contain;
     position: relative;
-    left: -5px;
 }
 
 .project h4 {
     display: flex;
+    gap: 10px;
     align-items: center;
-    font-family: 'Poppins';
     font-size: 20px;
     font-weight: 300;
 }

@@ -14,7 +14,7 @@ export const NavBar = () => {
     return (
         <nav>
             <ul className={selected || 'service'} >
-                <li><Link to={'/service'}> Servicio </Link></li>
+                <li><Link to={'/service'}> Servicios </Link></li>
                 <li><Link to={'/jobs'}> Trabajos </Link></li>
                 <li><Link to={'/projects'}> Proyectos </Link></li>
                 <div></div>
