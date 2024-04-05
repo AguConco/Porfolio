@@ -40,7 +40,7 @@ export const Footer = () => {
                     <h4>Agustin Concollato</h4>
                     <ul>
                         <li><button onClick={() => setData('studies')}>Mis estudios</button></li>
-                        <li><button onClick={() => setData('cv')}>ver cv</button></li>
+                        <li><button onClick={() => setData('cv')}>Ver cv</button></li>
                     </ul>
                 </div>
             </footer>

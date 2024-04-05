@@ -1,61 +1,42 @@
+.app-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 .option-config {
-    padding: 15px 0;
-    background: #fff;
-    margin-bottom: 20px;
+    min-width: calc(50% - 10px);
+    max-width: calc(50% - 10px);
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: start;
-    overflow: hidden;
-    cursor: pointer;
+    padding: 20px;
 }
 
-
-.option-config .btn-expand {
-    border-radius: 50%;
-    height: 35px;
-    width: 35px;
-    min-height: 35px;
-    min-width: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.option-config:hover .btn-expand svg path {
-    fill: var(--primary);
-}
-
-.option-config:hover .btn-expand {
-    background: #f9f9f9;
-}
-
-.section-service .option-config span {
+.section-service .option-config h4 {
     font-size: 18px;
     margin-bottom: 15px;
-    display: inline-flex;
-    align-items: center;
-    gap: 15px;
+    display: block;
     text-align: start;
     font-weight: 300;
     color: var(--primary);
 }
 
-.option-config li::first-letter {
-    padding: 0 15px 0 30px;
+.option-config div>ul>li::first-letter,
+.option-config div>ul>li ul li::first-letter {
+    padding: 0 10px 0 5px;
     color: #aaa;
     font-size: 13px;
 }
 
 .option-config li {
-    font-size: 18px;
+    font-size: 16px;
     margin: 5px 0;
     display: block;
 }
 
-.option-config span button {
+.option-config h4 button {
     padding: 3px 10px;
     border-radius: 15px;
     border: 1px solid #ddd;
@@ -67,6 +48,14 @@
 .option-config p {
     font-size: 16px;
     color: #7d7d7d;
+}
+
+.option-config div>ul>li ul {
+    padding-left: 25px;
+}
+
+.option-config span {
+    display: none;
 }
 
 
@@ -81,4 +70,36 @@
         font-size: 13px;
     }
 
+    .app-list {
+        flex-wrap: nowrap;
+        gap: 10px;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+
+    .option-config {
+        min-width: 100%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        padding: 20px 20px 60px 20px;
+        scroll-snap-align: start;
+        position: relative;
+    }
+    
+    .section-service .option-config h4 {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .option-config span.pagination {
+        color: var(--primary);
+        font-weight: 300;
+        font-size: 13px;
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
+    }
 }

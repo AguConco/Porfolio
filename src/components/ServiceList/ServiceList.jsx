@@ -1,23 +1,18 @@
-import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { useEffect, useState } from "react"
 import './ServiceList.css'
 
-const ServiceList = ({ e }) => {
-
-    const [expand, setExpand] = useState(false)
+const ServiceList = ({ e, i }) => {
 
     return (
-        <li className="option-config" style={expand ? { height: 'auto' } : { height: '65px' }} onClick={() => setExpand(!expand)}>
+        <li className="option-config">
             <div>
-                <span>
+                <h4>
                     {e.name}
-                </span>
+                </h4>
                 <ul>
-                    {e.descripction.map(e => <li>{e}</li>)}
+                    {e.descripction.map(e => <li>{e?.title || e}<ul><li>{e?.descripction}</li></ul></li>)}
                 </ul>
+                <span className='pagination'>{i+1}/4</span>
             </div>
-            <button className="btn-expand"><FontAwesomeIcon icon={expand ? faAngleUp : faAngleDown} /></button>
         </li>
     )
 }
