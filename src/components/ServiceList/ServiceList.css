@@ -58,6 +58,9 @@
     display: none;
 }
 
+.option-config span.pagination {
+    display: none;
+}
 
 @media screen and (max-width: 1040px) {
     .option-config {
@@ -94,6 +97,7 @@
     }
     
     .option-config span.pagination {
+        display: block;
         color: var(--primary);
         font-weight: 300;
         font-size: 13px;
