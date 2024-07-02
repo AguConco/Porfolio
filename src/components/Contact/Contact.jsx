@@ -10,7 +10,7 @@ const Contact = () => {
         <section id="contact" className="sectionContact">
             <div>
                 <h3>CONTACTO</h3>
-                <span>Cualquier consulta sobre la aplicación que deseas realizar, no dudes en contactarme.</span>
+                <span>Cualquier consulta sobre la aplicación que deseas realizar, no dudes en contactarme</span>
                 <div className="containerContactCard">
                     <div className="contactCard">
                         {platform

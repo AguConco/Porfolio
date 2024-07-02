@@ -41,7 +41,7 @@ const Projects = () => {
                 <p>
                     Estos proyectos fueron realizados en los cursos que hice.
                     Aunque no necesariamente tienen un propósito funcional para otros,
-                    demuestran mi capacidad para aplicar lo que he aprendido en situaciones prácticas.
+                    demuestran mi capacidad para aplicar lo que he aprendido en situaciones prácticas
                 </p>
             </div>
             <div className="container-projects">

@@ -15,9 +15,9 @@ export const Main = () => {
       <NavBar />
       <Routes>
         <Route path="" element={<Service />} />
-        <Route path="/service" element={<Service />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/jobs" element={<Jobs />} />
+        <Route path="/servicios" element={<Service />} />
+        <Route path="/proyectos" element={<Projects />} />
+        <Route path="/trabajos" element={<Jobs />} />
       </Routes>
       <Contact />
       <Footer />

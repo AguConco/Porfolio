@@ -13,10 +13,10 @@ export const NavBar = () => {
 
     return (
         <nav>
-            <ul className={selected || 'service'} >
-                <li><Link to={'/service'}> Servicios </Link></li>
-                <li><Link to={'/jobs'}> Trabajos </Link></li>
-                <li><Link to={'/projects'}> Proyectos </Link></li>
+            <ul className={selected || 'servicios'} >
+                <li><Link to={'/servicios'}> Servicios </Link></li>
+                <li><Link to={'/trabajos'}> Trabajos </Link></li>
+                <li><Link to={'/proyectos'}> Proyectos </Link></li>
                 <div></div>
             </ul>
         </nav >

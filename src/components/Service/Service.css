@@ -56,12 +56,17 @@
 
 .section-service .app-list {
     margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
-.divisor-h {
-    height: 2px;
-    width: 300px;
-    background: #eee;
+.section-service .app-list li{
+    color: var(--primary);
+    background: #2d65c010;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 @media screen and (max-width: 1000px) {
@@ -80,13 +85,18 @@
         line-height: 40px;
     }
     
-    .divisor-h {
-        width: 60%;
-    }
-    
     .section-service h3 {
         line-height: 25px;
         margin-top: 15px;
         padding: 0 20px;
     }
+
+    .section-service .app-list {
+        flex-direction: column;
+        padding: 0 20px;
+        max-width: 400px;
+        margin: 60px auto 0;
+    }
+
+
 }

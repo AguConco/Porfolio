@@ -30,30 +30,26 @@ nav div {
     transition: .3s;
 }
 
-.service div {
+.servicios div {
     left: 0;
 }
 
-.service li:first-child a{
+.servicios li:first-child a{
     color: var(--primary);
 }
 
-.jobs div {
+.trabajos div {
     left: 120px;
 }
 
-.jobs li:nth-child(2) a{
+.trabajos li:nth-child(2) a{
     color: var(--primary);
 }
 
-.projects div {
+.proyectos div {
     left: 240px;
 }
 
-.projects li:nth-child(3) a{
+.proyectos li:nth-child(3) a{
     color: var(--primary);
-}
-
-@media screen and (max-width: 1100px) {
-
 }
